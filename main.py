@@ -179,3 +179,86 @@
 # n = int(input("Enter the number of rows: "))
 # for i in range(1, n + 1):
 #     print('*' * i)
+
+
+
+
+#questions on string,lists,tupples,sets,dict
+
+#1)Print the string in reverse, its length, in uppercase, lowercase and copy into another string
+# a = "parampatel"
+# print(a.lower())
+#-------------------
+# a="parram"
+# b=a
+# print(b)
+#-------------------
+# a="param"
+# print(len(a))
+#-------------------
+# a="param"
+# b=""
+# for i in range(len(a)-1,-1,-1):
+#     b= b +a[i]
+# print(b);
+        #or#
+# a="param"
+# print(a[::-1])
+
+
+
+#2)Arrange string characters such that the lowercase letters should come first in another sttring.
+# a="yooo BroTHER How are You"
+# b=""
+# for i in a:
+#     if i.islower():
+#         b = b + i
+# for i in a:
+#     if i.isupper():
+#         b = b + i
+# print(b)
+
+
+
+#3)Count all the letters, digits, and special symbols from a given string
+# str = "P@#yn26at^&i5ve"
+# chr=0
+# dig=0
+# spchr=0
+# for i in str:
+#     if i.isdigit():
+#         dig = dig +1
+#     elif i.isalpha():
+#         chr=chr+1
+#     else:
+#         spchr=spchr+1
+# print(chr,dig,spchr)
+
+
+
+#4)Count vowels from the given strings
+# def vowelCounter(x):
+#     vowels=0
+#     consonents=0
+#     for i in x:
+#         if i in "aeiouAEIOU":
+#             vowels=vowels+1
+#         elif i == " ":
+#             continue
+#         else:
+#             consonents=consonents+1
+#     return f"vowels={vowels},consonants={consonents}"
+# a="Param Patel"
+# print(vowelCounter(a))
+
+
+
+#5)Check string is pallindrome or not
+# a = input("What's your name: ")
+# b = ""
+# for i in range(len(a)-1,-1,-1):
+#     b=b+a[i]
+# if a==b:
+#     print(f"{a} is pallindrome")
+# else:
+#     print(f"{a} is not a pallindrome")
