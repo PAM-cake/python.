@@ -26,13 +26,11 @@
 
 
 #3)Accept an integer and check whether it is an even number or odd#
-# a = int(input("Enter the number \n"))
-
-# if a % 2 ==0 :
-#     print(f"{a} is an even number!")
+# n=int(input("Enter the number: "))
+# if n%2==0:
+#         print("Even")
 # else:
-#     print(f"{a} is an odd number!")
-
+#         print("ODD")
 
 
 #4)Accept name and age from the user. Check if the user is a valid voter or not.#
@@ -59,48 +57,49 @@
 
 
 # #6)Accept an English alphabet from user and check if it's a consonant or a vowel#
-# a = input("Enter an alphabet: ")
-# if a in "aeiouAEIOU":
-#     print(f"{a} is vowel.")
-# else:
-#     print(f"{a} is consonant")
+# a=input("Enter an alphabet: ")
+# for i in a:
+#         if i in ("aeiouAEIOU"):
+#                 print("Vowel")
+#         else:
+#                 print("Consonent")
+
 
 
 
 #7) Print natural number up to n.
-# n = int(input("Please tell a number: "))
+# n=int(input("Enter a natural number: "))
 # for i in range(1,n+1,1):
-#     print(i)
+#         print(i)
 
 
 
 #8) Reverse for loop. Print n to 1.
-# n = int(input("Please tell a number: "))
+# n=int(input("Enter a natural number: "))
 # for i in range(n,0,-1):
-#    print(i)
+#         print(i)
 
 #9)Take a number as input and print its table upto 10 terms
-# n = int(input("Enter the number: "))
+# n=int(input("Enter the number: "))
 # for i in range(1,11):
-#     print(f"{n} * {i} = {n*i}")
+#         print(f"{n} * {i} = {n*i}")
 
 
 
 # #10)Sum upto n terms#
-# n = int(input("Write a num: "))
-# sum = 0 
-# for i in range(1, n+1):
-#     sum = sum + i
+# n=int(input("Enter the number: "))
+# sum = 0
+# for i in range(1,n+1,1):
+#         sum = sum + i
 # print(sum)
 
 
 
 #11)Factorial of the number#
-# n = int(input("Please tell your number: "))
-# fact = 1
-# for i in range(1,n+1):
-#     fact = fact*i
-
+# n = int(input("Enter the number: "))
+# fact=1
+# for i in range(1,n+1,1):
+#         fact=fact*i
 # print(fact)
 
 
@@ -295,21 +294,22 @@
 
 
 #3)Print positive and negative elements of an list in seperate lists
-# count=int(input("how many number you want: "))
+# count=int(input("Enter the number: "))
 # l=[]
 # for i in range(count):
-#     z=int(input("Tell the number and enter: "))
-#     l.append(z)
-# print(f"array -> {l}")
+#         z=int(input("Tell the number and press enter: "))
+#         l.append(z)
+# print(f"ARRAY -> {l}")
 # p=[]
 # n=[]
 # for j in l:
-#     if j >= 0:
-#         p.append(j)
-#     if j < 0:
-#         n.append(j)
-# print(f"positive-number -> {p}")
-# print(f"negative-number -> {n}")
+#         if j >= 0:
+#                 p.append(j)
+#         else:
+#                 n.append(j)
+# print(f"POSITIVE-{p} , NEAGTIVE-{n}")
+
+        
 
 
 
@@ -322,8 +322,8 @@
 # print(l)
 # max=0
 # index=0
-# for j in range(len(l)):
-#     if l[j] > max:
+# for j in range(len(l)):      //note- we used range() function instead of for j in l , beacuse we want to find index as well as value so 
+#     if l[j] > max:      
 #         max=l[j]
 #         index=j
 # print(f"largest number = {max} and it's index is {index}")
@@ -398,3 +398,72 @@
 # print(f"array -> {l}")
 # b=set(l)
 # print(len(b))
+
+
+
+#DICTIONARIES
+#-------------------------
+#1)Merging two dictionaries.
+# a = {1:10,2:20,3:30}
+# b = {4:40,5:50,6:60}
+# a.update(b)
+# print(a)
+
+
+
+#2)Sum all the value in dictionary.
+# count = int(input("Enter the number of elements you want in the dictionary: "))
+# d = {}
+# for i in range(count):
+#         key = input("Enter the key: ")
+#         value = int(input("Enter the value: "))
+#         d[key] = value
+# print(f"Dictionary: {d}")
+# sum = 0
+# for j in d.values():
+#         sum = sum + j
+# print(sum)
+
+
+
+#3)Count the frequency of each elements in a list.
+# count = int(input("Enter the number of elements you want: "))
+# l=[]
+# for i in range(count):
+#         z=int(input("Tell the numbers and press enter: "))
+#         l.append(z)
+# print(f"List -> {l}")
+# d={}
+# for j in l:
+#         if j in d.keys():
+#                 d[j] = d[j] + 1
+#         else:
+#                 d[j]=1
+# print(f"Frequency -> {d}")
+
+
+
+#4)Combine two dict by adding values for common keys.
+# count = int(input("Enter the number of elements you want in the dictionary: "))
+# d = {}
+# for i in range(count):
+#         key = input("Enter the key: ")
+#         value = int(input("Enter the value: "))
+#         d[key] = value
+# print(f"Dictionary: {d}")
+# count2 = int(input("Enter the number of elements you want in the dictionary: "))
+# d2 = {}
+# for j in range(count2):
+#         key2 = input("Enter the key: ")
+#         value2 = int(input("Enter the value: "))
+#         d2[key2] = value2
+# print(f"Dictionary1: {d}")
+# print(f"Dictionary2: {d2}")
+# for a in d2.keys():
+#         if a in d.keys():
+#                 d[a]=d[a]+d2[a]
+#         else:
+#                d[a]=d2[a]
+# print(f"ADDED -> {d}") 
+
+
