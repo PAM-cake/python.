@@ -183,8 +183,11 @@
 
 
 
-#questions on string,lists,tupples,sets,dict
+#QUESTIONS FOR STRINGS, LIST, TUPPLES, SETS, DICT#
+#-------------------------------------------------#
 
+#STRING#
+#---------#
 #1)Print the string in reverse, its length, in uppercase, lowercase and copy into another string
 # a = "parampatel"
 # print(a.lower())
@@ -262,3 +265,136 @@
 #     print(f"{a} is pallindrome")
 # else:
 #     print(f"{a} is not a pallindrome")
+
+
+
+#LISTS QUESTIONS#
+#-----------------#
+#1)Accept the list elements and reprint it
+# l=[]
+# count=int(input("How many number you want: "))
+# for i in range(count):
+#     z= int(input("Tell your number and press enter: "))
+#     l.append(z)
+# print(l)
+
+
+
+#2)Print the elements in reverse order
+# count=int(input("How many number you want: "))
+# l=[]
+# for i in range(count):
+#     z=int(input("Tell the number and press enter: "))
+#     l.append(z)
+# print(l)
+# b=[]
+# for i in range(len(l)-1,-1,-1):
+#     b.append(l[i])
+# print(b)
+
+
+
+#3)Print positive and negative elements of an list in seperate lists
+# count=int(input("how many number you want: "))
+# l=[]
+# for i in range(count):
+#     z=int(input("Tell the number and enter: "))
+#     l.append(z)
+# print(f"array -> {l}")
+# p=[]
+# n=[]
+# for j in l:
+#     if j >= 0:
+#         p.append(j)
+#     if j < 0:
+#         n.append(j)
+# print(f"positive-number -> {p}")
+# print(f"negative-number -> {n}")
+
+
+
+#4)Find the greatest element and print it's index too.
+# count=int(input("Enter the total number of element you want: "))
+# l=[]
+# for i in range(count):
+#     z=int(input("Tell the number and enter: "))
+#     l.append(z)
+# print(l)
+# max=0
+# index=0
+# for j in range(len(l)):
+#     if l[j] > max:
+#         max=l[j]
+#         index=j
+# print(f"largest number = {max} and it's index is {index}")
+
+
+
+#5)Find the second greatest element and print its index
+# count=int(input("Enter the total number of elements you want: "))
+# l=[]
+# for i in range(count):
+#     z=int(input("Tell the number and press enter: "))
+#     l.append(z)
+# print(f"array -> {l}")
+# max=0
+# max2=0
+# index=0
+# index2=0
+# for j in range(len(l)):
+#     if l[j] > max:
+#         max2 = max
+#         max=l[j]
+#         index2 = index
+#         index=j
+#     elif l[j] > max2:
+#         max2 = l[j]
+#         index2 = j
+# print(f"Second greatest elem = {max2} and it's index = {index2}")
+
+
+
+#6)Check if list is sorted or not 
+# count=int(input("Enter the total number of element you want: "))
+# l=[]
+# for i in range(count):
+#     z=int(input("Tell the number and enter: "))
+#     l.append(z)
+# print(f"array -> {l}")
+# for j in range(len(l)-1):
+#     if l[j] <= l[j+1]:
+#         continue
+#     else:
+#         print("Not sorted!")
+#         break
+# else:
+#     print("Sorted")
+
+
+
+#7)Check its pallandromic or not.
+# count=int(input("Enter the total number of element you want: "))
+# l=[]
+# for i in range(count):
+#     z=int(input("Tell the number and enter: "))
+#     l.append(z)
+# print(f"array -> {l}")
+# b=[]
+# for j in range(len(l)-1,-1,-1):
+#     b.append(l[j])
+# if l==b:
+#     print("Pallindrome")
+# else:
+#     print("Not a pallindrome")
+
+
+
+#8)How many seperate elements are there in the list excluding repetation
+# count=int(input("Enter the total number of element you want: "))
+# l=[]
+# for i in range(count):
+#     z=int(input("Tell the number and enter: "))
+#     l.append(z)
+# print(f"array -> {l}")
+# b=set(l)
+# print(len(b))
